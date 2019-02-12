@@ -1,0 +1,11 @@
+html {
+    background: linear-gradient(45deg, green, blue, purple);
+    background-repeat: no-repeat;
+    height: 100%; 
+}
+
+h1 {
+    font-family: Tangerine, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
