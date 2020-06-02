@@ -192,17 +192,35 @@ let bothImages = [
     "images\both\IMG_0328(1).JPG",
     "images\both\IMG_0331.jpg"
 ]
-
-function slides(arr, div) {
-    let index = 0;
-    let image = document.getElementById(div);
-    image.src = arr[index];
-    index++;
-    if (index >= arr.length) {
-        index = 0;
+let roscoeIndex = 0;
+let morganIndex = 0;
+let bothIndex = 0;
+function roscoeSlides() {
+    let image = document.getElementById("roscoe");
+    image.src = roscoeImages[roscoeIndex];
+    roscoeIndex++;
+    if (roscoeIndex >= roscoeImages.length) {
+        roscoeIndex = 0;
+    }
+}
+function morganSlides() {
+    let image = document.getElementById("morgan");
+    image.src = morganImages[morganIndex];
+    console.log(image.src);
+    morganIndex++;
+    if (morganIndex >= morganImages.length) {
+        morganIndex = 0;
+    }
+}
+function bothSlides() {
+    let image = document.getElementById("both");
+    image.src = bothImages[bothIndex];
+    bothIndex++;
+    if (bothIndex >= bothImages.length) {
+        bothIndex = 0;
     }
 }
 
-setInterval("slides(roscoeImages, 'roscoe')", 1000);
-setInterval("slides(morganImages, 'morgan')", 1000);
-setInterval("slides(bothImages, 'both')", 1000);
+setInterval(roscoeSlides, 1500);
+setInterval(morganSlides, 1750);
+setInterval(bothSlides, 2000);

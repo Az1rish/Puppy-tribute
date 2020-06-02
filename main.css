@@ -18,13 +18,13 @@ p {
 
 img {
     height: 25%;
-    width: 95%;
+    width: 40%;
 }
 
 .box {
     padding: 0;
     margin: 0;
-    top: 500;
+    display: flex;
     width: 100%;
     background: white;
 }
