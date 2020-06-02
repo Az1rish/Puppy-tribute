@@ -184,13 +184,13 @@ let bothImages = [
     "images/both/IMG_0298.JPG",
     "images/both/IMG_0302(1).JPG",
     "images/both/IMG_0311.JPEG",
-    "images\both\IMG_0312.JPEG",
-    "images\both\IMG_0319.JPG",
-    "images\both\IMG_0327.jpg",
-    "images\both\IMG_0327(1).JPG",
-    "images\both\IMG_0328.JPG",
-    "images\both\IMG_0328(1).JPG",
-    "images\both\IMG_0331.jpg"
+    "images/both/IMG_0312.JPEG",
+    "images/both/IMG_0319.JPG",
+    "images/both/IMG_0327.jpg",
+    "images/both/IMG_0327(1).JPG",
+    "images/both/IMG_0328.JPG",
+    "images/both/IMG_0328(1).JPG",
+    "images/both/IMG_0331.jpg"
 ]
 let roscoeIndex = 0;
 let morganIndex = 0;
@@ -206,7 +206,7 @@ function roscoeSlides() {
 function morganSlides() {
     let image = document.getElementById("morgan");
     image.src = morganImages[morganIndex];
-    console.log(image.src);
+    // console.log(image.src);
     morganIndex++;
     if (morganIndex >= morganImages.length) {
         morganIndex = 0;
