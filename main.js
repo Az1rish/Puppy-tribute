@@ -221,6 +221,6 @@ function bothSlides() {
     }
 }
 
-setInterval(roscoeSlides, 1500);
-setInterval(morganSlides, 1750);
+setInterval(roscoeSlides, 1333);
+setInterval(morganSlides, 1666);
 setInterval(bothSlides, 2000);
