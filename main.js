@@ -1,4 +1,4 @@
-let roscoeImages = [
+{/*let roscoeImages = [
     "images/roscoe/IMG_0007.jpg",
     "images/roscoe/IMG_0006.jpg",
     "images/roscoe/IMG_0001.jpg",
@@ -59,7 +59,7 @@ let roscoeImages = [
     "images/roscoe/IMG_0362.JPG",
     "images/roscoe/IMG_0364.jpg",
     "images/roscoe/IMG_0372.JPG"
-];
+];*/}
 
 let morganImages = [
     "images/morgan/IMG_0010.PNG",
