@@ -59,7 +59,7 @@
     "images/roscoe/IMG_0362.JPG",
     "images/roscoe/IMG_0364.jpg",
     "images/roscoe/IMG_0372.JPG"
-];*/}
+];
 
 let morganImages = [
     "images/morgan/IMG_0010.PNG",
@@ -223,4 +223,22 @@ function bothSlides() {
 
 setInterval(roscoeSlides, 1333);
 setInterval(morganSlides, 1666);
-setInterval(bothSlides, 2000);
+setInterval(bothSlides, 2000);*/}
+// function slideshow() {
+    $(document).ready(function() {
+        $("#ros > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#ros > div:first')
+                .fadeout(1000)
+                // .hide()
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#ros');
+            }, 3000);
+        })
+    // }
+// }
+
+// $(slideshow);

@@ -17,11 +17,11 @@ p {
     padding: 10px 50px;
 }
 
-/* img { */
-    /* height: 125px; */
-    /* width: 40%; */
-    /* border-radius: 25px; */
-/* } */
+img {
+    height: 240px;
+    width: 240px;
+    border-radius: 25px;
+}
 
 .box {
     padding: 5px;
@@ -80,7 +80,7 @@ p {
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-#ros > img {
+#ros > div {
     position: absolute;
     top: 10px;
     left: 10px;
