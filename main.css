@@ -102,6 +102,7 @@ img {
 
     .midSize {
         display: flex;
+        margin-left: 100px;
     }
 
     #roscoe, #morgan, #both, #roscoe > div, #morgan > div, #both > div, img {
