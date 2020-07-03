@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat; 
     height: 100%; 
     transition: img 2s;
+    padding-bottom: 15px;
 }
 
 h1 {
@@ -23,12 +24,7 @@ img {
     border-radius: 25px;
 }
 
-.box {
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    width: 90%;
-}
+
 .heart {
     margin: auto;
     background-color: red;
@@ -93,4 +89,52 @@ img {
     bottom: 10px;
     width: 240px;
     height: 240px;
+}
+
+@media only screen and (min-width: 650px) {
+    .box {
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .midSize {
+        display: flex;
+    }
+
+    #roscoe, #morgan, #both, #roscoe > div, #morgan > div, #both > div, img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .bottom, .bottom:after, .bottom:before {
+        background-color: red;
+    }
+
+    .middleBox {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #roscoe, #morgan, #both, #roscoe > div, #morgan > div, #both > div, img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .heart, .heart:after, .heart:before {
+        height: 75px;
+        width: 75px;
+    }
+
+    .heart:after {
+        left: 37px;
+    }
+
+    .heart:before {
+        top: -37px;
+    }
 }
