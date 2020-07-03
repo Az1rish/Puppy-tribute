@@ -225,19 +225,18 @@ setInterval(roscoeSlides, 1333);
 setInterval(morganSlides, 1666);
 setInterval(bothSlides, 2000);*/}
 // function slideshow() {
-    $(document).ready(function() {
-        $("#ros > div:gt(0)").hide();
+$(document).ready(function() {
+    $("#ros > div:gt(0)").hide();
 
-        setInterval(function() {
-            $('#ros > div:first')
-                .fadeout(1000)
-                // .hide()
-                .next()
-                .fadeIn(1000)
-                .end()
-                .appendTo('#ros');
-            }, 3000);
-        })
+    setInterval(function() {
+        $('#ros > div:first')
+            .fadeOut(2000)
+            .next()
+            .fadeIn(2000)
+            .end()
+            .appendTo('#ros');
+    }, 5000);
+})
     // }
 // }
 
