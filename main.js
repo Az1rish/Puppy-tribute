@@ -62,56 +62,56 @@
 ];
 
 let morganImages = [
-    "images/morgan/IMG_0010.PNG",
-    "images/morgan/IMG_0013(1).jpg",
-    "images/morgan/IMG_0062(1).JPG",
-    "images/morgan/IMG_0069(1).JPG",
-    "images/morgan/IMG_0070.PNG",
-    "images/morgan/IMG_0098(1).JPG",
-    "images/morgan/IMG_0141.jpg",
-    "images/morgan/IMG_0143.jpg",
-    "images/morgan/IMG_0150.JPG",
-    "images/morgan/IMG_0155.JPG",
-    "images/morgan/IMG_0156.JPG",
-    "images/morgan/IMG_0157.JPG",
-    "images/morgan/IMG_0172.JPG",
-    "images/morgan/IMG_0173.JPG",
-    "images/morgan/IMG_0177.JPG",
-    "images/morgan/IMG_0180.JPG",
-    "images/morgan/IMG_0186.JPG",
-    "images/morgan/IMG_0189.jpg",
-    "images/morgan/IMG_0190.JPG",
-    "images/morgan/IMG_0192.JPG",
-    "images/morgan/IMG_0194.JPG",
-    "images/morgan/IMG_0198.JPG",
-    "images/morgan/IMG_0203.jpg",
-    "images/morgan/IMG_0205.JPG",
-    "images/morgan/IMG_0206.JPG",
-    "images/morgan/IMG_0210.JPG",
-    "images/morgan/IMG_0211.JPG",
-    "images/morgan/IMG_0214.JPG",
-    "images/morgan/IMG_0217.JPEG",
-    "images/morgan/IMG_0235.JPEG",
-    "images/morgan/IMG_0236.JPEG",
-    "images/morgan/IMG_0238.JPEG",
-    "images/morgan/IMG_0240.JPEG",
-    "images/morgan/IMG_0243.JPEG",
-    "images/morgan/IMG_0244.JPEG",
-    "images/morgan/IMG_0247.JPEG",
-    "images/morgan/IMG_0249.JPEG",
-    "images/morgan/IMG_0256.JPEG",
-    "images/morgan/IMG_0295.JPG",
-    "images/morgan/IMG_0304.jpg",
-    "images/morgan/IMG_0305.JPEG",
-    "images/morgan/IMG_0307.JPEG",
-    "images/morgan/IMG_0309.JPEG",
-    "images/morgan/IMG_0310.JPEG",
-    "images/morgan/IMG_0313.JPEG",
-    "images/morgan/IMG_0316.JPEG",
-    "images/morgan/IMG_0320.JPEG",
-    "images/morgan/IMG_0322.JPEG",
-    "images/morgan/IMG_0324.JPEG",
-    "images/morgan/IMG_0325.JPEG"
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    ,
+    
 ];
 
 let bothImages = [
@@ -191,53 +191,29 @@ let bothImages = [
     "images/both/IMG_0328.JPG",
     "images/both/IMG_0328(1).JPG",
     "images/both/IMG_0331.jpg"
-]
-let roscoeIndex = 0;
-let morganIndex = 0;
-let bothIndex = 0;
-function roscoeSlides() {
-    let image = document.getElementById("roscoe");
-    image.src = roscoeImages[roscoeIndex];
-    roscoeIndex++;
-    if (roscoeIndex >= roscoeImages.length) {
-        roscoeIndex = 0;
-    }
-}
-function morganSlides() {
-    let image = document.getElementById("morgan");
-    image.src = morganImages[morganIndex];
-    // console.log(image.src);
-    morganIndex++;
-    if (morganIndex >= morganImages.length) {
-        morganIndex = 0;
-    }
-}
-function bothSlides() {
-    let image = document.getElementById("both");
-    image.src = bothImages[bothIndex];
-    bothIndex++;
-    if (bothIndex >= bothImages.length) {
-        bothIndex = 0;
-    }
-}
+]*/}
 
-setInterval(roscoeSlides, 1333);
-setInterval(morganSlides, 1666);
-setInterval(bothSlides, 2000);*/}
-// function slideshow() {
 $(document).ready(function() {
-    $("#ros > div:gt(0)").hide();
+    $("#roscoe > div:gt(0)").hide();
 
     setInterval(function() {
-        $('#ros > div:first')
+        $('#roscoe > div:first')
             .fadeOut(2000)
             .next()
             .fadeIn(2000)
             .end()
-            .appendTo('#ros');
+            .appendTo('#roscoe');
     }, 5000);
-})
-    // }
-// }
 
-// $(slideshow);
+    $("#morgan > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#morgan > div:first')
+            .fadeOut(1500)
+            .next()
+            .fadeIn(1500)
+            .end()
+            .appendTo('#morgan');
+    }, 4000);
+
+});

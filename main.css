@@ -71,7 +71,7 @@ img {
     }
 }
 
-#ros {
+#roscoe, #morgan {
     margin: 50px auto;
     position: relative;
     width: 240px;
@@ -81,7 +81,7 @@ img {
     border-radius: 25px;
 }
 
-#ros > div {
+#roscoe > div, #morgan > div {
     position: absolute;
     top: 10px;
     left: 10px;
